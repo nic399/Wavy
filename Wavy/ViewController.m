@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WavyCollectionViewCell.h"
+#import "WavyFlowLayout.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,8 @@
     
     [self.containerView registerNib:[UINib nibWithNibName:@"WavyCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"WavyCell"];
     
-    
+    WavyFlowLayout *myLayout = [[WavyFlowLayout alloc] init];
+    self.containerView.collectionViewLayout = myLayout;
     
     
     
@@ -45,7 +47,7 @@
 
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return 10;
+    return 13;
 }
 
 //- (void)encodeWithCoder:(nonnull NSCoder *)aCoder {

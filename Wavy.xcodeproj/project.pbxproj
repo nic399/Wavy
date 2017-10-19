@@ -15,6 +15,7 @@
 		013E51791F99024B00BC08BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 013E51781F99024B00BC08BD /* main.m */; };
 		013E51821F991E3300BC08BD /* WavyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 013E51801F991E3300BC08BD /* WavyCollectionViewCell.m */; };
 		013E51831F991E3300BC08BD /* WavyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013E51811F991E3300BC08BD /* WavyCollectionViewCell.xib */; };
+		013E51861F99209B00BC08BD /* WavyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 013E51851F99209B00BC08BD /* WavyFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		013E517F1F991E3300BC08BD /* WavyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WavyCollectionViewCell.h; sourceTree = "<group>"; };
 		013E51801F991E3300BC08BD /* WavyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WavyCollectionViewCell.m; sourceTree = "<group>"; };
 		013E51811F991E3300BC08BD /* WavyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WavyCollectionViewCell.xib; sourceTree = "<group>"; };
+		013E51841F99209B00BC08BD /* WavyFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WavyFlowLayout.h; sourceTree = "<group>"; };
+		013E51851F99209B00BC08BD /* WavyFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WavyFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				013E516D1F99024B00BC08BD /* ViewController.m */,
 				013E517F1F991E3300BC08BD /* WavyCollectionViewCell.h */,
 				013E51801F991E3300BC08BD /* WavyCollectionViewCell.m */,
+				013E51841F99209B00BC08BD /* WavyFlowLayout.h */,
+				013E51851F99209B00BC08BD /* WavyFlowLayout.m */,
 				013E51811F991E3300BC08BD /* WavyCollectionViewCell.xib */,
 				013E516F1F99024B00BC08BD /* Main.storyboard */,
 				013E51721F99024B00BC08BD /* Assets.xcassets */,
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				013E516E1F99024B00BC08BD /* ViewController.m in Sources */,
+				013E51861F99209B00BC08BD /* WavyFlowLayout.m in Sources */,
 				013E51821F991E3300BC08BD /* WavyCollectionViewCell.m in Sources */,
 				013E51791F99024B00BC08BD /* main.m in Sources */,
 				013E516B1F99024B00BC08BD /* AppDelegate.m in Sources */,
