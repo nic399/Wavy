@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "WavyCollectionViewCell.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UICollectionView *containerView;
 
 @end
 
@@ -18,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [self.containerView registerNib:[UINib nibWithNibName:@"WavyCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"WavyCell"];
     
     
     
@@ -33,14 +37,15 @@
 
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    WavyCollectionViewCell *cell = [self.containerView dequeueReusableCellWithReuseIdentifier:@"WavyCell" forIndexPath:indexPath];
+    cell.label.text = [NSString stringWithFormat:@"cell%ld", (long)indexPath.item];
     
-    
-    return nil;
+    return cell;
 }
 
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return 0;
+    return 10;
 }
 
 //- (void)encodeWithCoder:(nonnull NSCoder *)aCoder {
